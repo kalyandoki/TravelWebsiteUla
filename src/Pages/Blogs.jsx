@@ -1,4 +1,5 @@
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
+import BlogsList from "../components/BlogsList";
 
 function Blogs() {
   return (
@@ -10,10 +11,15 @@ function Blogs() {
           className="w-full h-full object-cover rounded-lg shadow-md"
         />
       </div>
-      <div></div>
-      {/* <div>
+      <div>
+        <h1 className="text-4xl font-bold text-center p-6 mt-10 text-[#8c6d31]">
+          BLOGS
+        </h1>
+        <BlogsList />
+      </div>
+      <div>
         <Footer />
-      </div> */}
+      </div>
     </>
   );
 }

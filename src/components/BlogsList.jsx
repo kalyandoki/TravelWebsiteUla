@@ -1,4 +1,5 @@
 function BlogsList() {
+  //Dummy Data 😊
   const blogData = [
     {
       id: 1,
@@ -51,7 +52,7 @@ function BlogsList() {
     {
       id: 6,
       imageUrl:
-        "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Lx1mpKged4SOYnLZvtfhaw.jpeg",
+        "https://firebasestorage.googleapis.com/v0/b/phone-auth-d0a8d.appspot.com/o/blogs%2FGiraffe_A8I9407-Edit.jpg?alt=media&token=e25fe6a7-7a58-4fd2-a87c-78e9ca5dff8f",
       title: "Discover the Magic of Maasai Mara",
       content:
         "The Maasai Mara National Reserve, nestled in the heart of Kenya, is a sprawling savannah teeming with breathtaking landscapes, diverse wildlife, and rich cultural heritage.",
@@ -78,7 +79,7 @@ function BlogsList() {
     {
       id: 9,
       imageUrl:
-        "https://medium.com/@Travel_ub/discover-the-thrills-of-wildlife-safari-an-ultimate-guide-5f5309fedfa1",
+        "https://firebasestorage.googleapis.com/v0/b/phone-auth-d0a8d.appspot.com/o/TU-Home%2FTuskers%20from%20kenya-Wildlife%20safari%20(1%20of%201).jpg?alt=media&token=37f2fcf2-0b00-429a-a305-bc27c00155c8",
       title: "Discover the Thrills of Wildlife Safari: An Ultimate Guide",
       content:
         "Are you ready to embark on an unforgettable adventure? If you’ve ever dreamed of immersing yourself in the untamed beauty of nature, a wildlife safari should be at the top of your bucket list.",
@@ -418,7 +419,41 @@ function BlogsList() {
     },
   ];
   console.log(blogData);
-  return <div>BlogsList</div>;
+  return (
+    <>
+      <div className="p-6">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {blogData.map((blog) => (
+            <li
+              key={blog.id}
+              className="bg-white shadow-lg rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105"
+            >
+              <a href={blog.link} target="_blank">
+                <img
+                  src={blog.imageUrl}
+                  alt={blog.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold mb-2 text-[#b08328]">
+                    {blog.title}
+                  </h2>
+                  <p className="text-gray-700 line-clamp-3">{blog.content}</p>
+                  <a
+                    href={blog.link}
+                    target="_blank"
+                    className="inline-block mt-4 text-[#b6995f] font-medium hover:underline transition-all duration-300"
+                  >
+                    Read More →
+                  </a>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
+  );
 }
 
 export default BlogsList;

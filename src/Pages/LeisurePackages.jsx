@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+import LeisurePack from "../components/LeisurePack";
 import Slider from "../components/Slider";
 const leisurePackagesImages = [
   "https://firebasestorage.googleapis.com/v0/b/phone-auth-d0a8d.appspot.com/o/LPackages%2Fpk-6.webp?alt=media&token=09ed993e-1c74-4bc2-9b44-1cc6b5f6c144",
@@ -10,6 +12,15 @@ function LeisurePackages() {
   return (
     <div>
       <Slider images={leisurePackagesImages} />
+      <div>
+        <h1 className="text-4xl font-bold text-center mt-10 text-[#d79925]">
+          LEISURE PACKAGES
+        </h1>
+      </div>
+      <LeisurePack />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
