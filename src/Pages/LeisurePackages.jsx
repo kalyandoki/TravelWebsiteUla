@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import ImageSliderLeisure from "../components/ImageSliderLeisure";
 import LeisurePack from "../components/LeisurePack";
 import Slider from "../components/Slider";
 const leisurePackagesImages = [
@@ -16,6 +17,7 @@ function LeisurePackages() {
         <h1 className="text-4xl font-bold text-center mt-10 text-[#d79925]">
           LEISURE PACKAGES
         </h1>
+        <ImageSliderLeisure />
       </div>
       <LeisurePack />
       <div>

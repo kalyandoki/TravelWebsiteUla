@@ -1,7 +1,9 @@
 import Footer from "../components/Footer";
 import HotSellingPack from "../components/HotSellingPack";
+import ImageSliderWildLife from "../components/ImageSlider";
 import Slider from "../components/Slider";
 import WildLifePack from "../components/WildLifePack";
+
 const wildlifePackagesImages = [
   "https://firebasestorage.googleapis.com/v0/b/phone-auth-d0a8d.appspot.com/o/bandipur%2Fbandipur-2.webp?alt=media&token=6c730b0a-45f0-42a9-af93-8eb7ce5b5f66",
   "https://firebasestorage.googleapis.com/v0/b/phone-auth-d0a8d.appspot.com/o/WildlifePackageTemplate%2Fk-4.webp?alt=media&token=ab628dd7-29a8-4857-b8cd-8ebbf7040227",
@@ -17,6 +19,7 @@ function WildlifePackages() {
         <h1 className="text-4xl font-bold text-center mt-10 text-[#d79925]">
           HOT SELLING PACKAGES
         </h1>
+        <ImageSliderWildLife />
       </div>
       <HotSellingPack />
       <div>

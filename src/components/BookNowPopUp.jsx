@@ -3,7 +3,7 @@ function BookNowPopUp({ cancel }) {
   return (
     <>
       <div className="fixed inset-0 flex items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/phone-auth-d0a8d.appspot.com/o/LPackages%2FTunnel%20replacement%20pic.webp?alt=media&token=b3317c4d-b2d4-4394-93f0-2b60bbf31b88https://firebasestorage.googleapis.com/v0/b/phone-auth-d0a8d.appspot.com/o/packageTemplate%2Fimg-13-4.jpg?alt=media&token=b538bfb3-0d8c-4368-aa5b-95267787b7c3')] bg-cover bg-center h-screen bg-opacity-60 p-4 z-250 animate-fade-in">
-        <div className="relative bg-gray-900 text-white rounded-lg shadow-xl w-full h-full md:h-auto md:max-w-6xl p-6">
+        <div className="relative bg-[#3c2a2ab7] text-white rounded-4xl shadow-xl w-full h-full md:h-auto md:max-w-6xl p-6">
           <button
             onClick={cancel}
             className="absolute top-3 right-3 p-2 rounded-lg text-red-500 hover:text-red-700 transition-colors"

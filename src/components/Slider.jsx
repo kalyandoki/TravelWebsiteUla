@@ -19,7 +19,7 @@ const Slider = ({ images }) => {
       <div className="relative w-full h-screen">
         <button
           onClick={prevSlide}
-          className="flex items-center justify-center absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 text-white text-2xl bg-black bg-opacity-50 rounded-full cursor-pointer z-10 hover:bg-opacity-70"
+          className="flex items-center justify-center absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 text-white text-2xl bg-[#00000083] bg-opacity-50 rounded-full cursor-pointer z-10 hover:bg-opacity-70"
         >
           <FaArrowLeft />
         </button>
@@ -30,7 +30,7 @@ const Slider = ({ images }) => {
         />
         <button
           onClick={nextSlide}
-          className="flex items-center justify-center absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 text-white text-2xl bg-black bg-opacity-50 rounded-full cursor-pointer z-10 hover:bg-opacity-70"
+          className="flex items-center justify-center absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 text-white text-2xl bg-[#00000083] bg-opacity-50 rounded-full cursor-pointer z-10 hover:bg-opacity-70"
         >
           <FaArrowRight />
         </button>
