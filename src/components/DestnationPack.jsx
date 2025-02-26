@@ -1,5 +1,4 @@
 function DestnationPack() {
-  // Add more destination data here...
   const DestinationData = [
     {
       id: 1,

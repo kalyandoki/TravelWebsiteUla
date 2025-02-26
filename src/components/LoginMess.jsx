@@ -67,10 +67,15 @@ function LoginMess({ cancel }) {
         <buton className="p-3 bg-orange-400 text-black rounded-2xl font-bold font-serif hover:bg-orange-600 transition duration-300 shadow-md w-1/2 text-center">
           Submit
         </buton>
-        <buton className="p-3 flex items-center gap-1 bg-green-600 text-white font-bold font-serif rounded-2xl hover:bg-green-600 transition duration-300 shadow-md w-1/2 text-center">
-          <FaWhatsapp size={30} />
-          Need Live assistence Chat Now
-        </buton>
+        <a
+          href="https://api.whatsapp.com/send/?phone=917483129148&text=Hi&type=phone_number&app_absent=0"
+          target="_blank"
+        >
+          <buton className="p-3 flex items-center gap-1 bg-green-600 text-white font-bold font-serif rounded-2xl hover:bg-green-600 transition duration-300 shadow-md w-1/2 text-center">
+            <FaWhatsapp size={30} />
+            Need Live assistence Chat Now
+          </buton>
+        </a>
       </div>
     </div>
   );
