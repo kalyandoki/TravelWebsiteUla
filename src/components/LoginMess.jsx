@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function LoginMess({ cancel }) {
   return (
-    <div className="bg-[#2a2d2d55] fixed  top-40 z-208 text-white p-4 h-auto w-1/2 flex items-center left-80 justify-center flex-col gap-4 rounded-4xl">
+    <div className="bg-[#2a2d2da1] fixed  top-30 z-208 text-white p-4 h-auto w-1/2 flex items-center left-80 justify-center flex-col gap-4 rounded-4xl">
       <button
         onClick={cancel}
         className="absolute top-3 right-3 p-2 rounded-lg text-red-500 hover:text-red-700 transition-colors"
@@ -70,6 +70,7 @@ function LoginMess({ cancel }) {
         <a
           href="https://api.whatsapp.com/send/?phone=917483129148&text=Hi&type=phone_number&app_absent=0"
           target="_blank"
+          className="w-full flex items-center justify-center gap-1"
         >
           <buton className="p-3 flex items-center gap-1 bg-green-600 text-white font-bold font-serif rounded-2xl hover:bg-green-600 transition duration-300 shadow-md w-1/2 text-center">
             <FaWhatsapp size={30} />
