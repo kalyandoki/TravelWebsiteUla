@@ -1,4 +1,8 @@
+import DestnationPack from "../components/DestnationPack";
+import HomeStep2 from "../components/HomeStep2";
+import Footer from "../components/Footer";
 import Slider from "../components/Slider";
+import TestimonialPack from "../components/TestimonialPack";
 
 const homeImages = [
   "https://firebasestorage.googleapis.com/v0/b/phone-auth-d0a8d.appspot.com/o/vietnam%2Fv-1.webp?alt=media&token=91070055-73d5-4888-94b1-f96146c17d0ahttps://img.freepik.com/premium-photo/trees-growing-forest_1048944-30368869.jpg",
@@ -11,6 +15,20 @@ function Home() {
   return (
     <div>
       <Slider images={homeImages} />
+      <HomeStep2 />
+      <div>
+        <h1 className="text-4xl font-bold text-center mt-10 text-[#d79925]">
+          DESTINATIONS
+        </h1>
+        <DestnationPack />
+        <h1 className="text-4xl font-bold text-center mt-10 text-[#d79925]">
+          TESTIMONIALS
+        </h1>
+        <TestimonialPack />
+        <div>
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }
