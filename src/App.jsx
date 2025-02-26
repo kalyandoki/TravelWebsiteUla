@@ -7,10 +7,11 @@ import AboutUs from "./Pages/AboutUs";
 import ContactUs from "./Pages/ContactUs";
 import Header from "./components/Header";
 import Blogs from "./Pages/Blogs";
+import MessagePack from "./components/MessagePack";
 
 function App() {
   return (
-    <div>
+    <div className="h-screen">
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -21,6 +22,7 @@ function App() {
         <Route path="/About-Us" element={<AboutUs />} />
         <Route path="/Contact-Us" element={<ContactUs />} />
       </Routes>
+      <MessagePack />
     </div>
   );
 }
