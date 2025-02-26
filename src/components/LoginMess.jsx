@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function LoginMess({ cancel }) {
   return (
-    <div className="bg-[#2a2d2da1] fixed  top-30 z-208 text-white p-4 h-auto w-1/2 flex items-center left-80 justify-center flex-col gap-4 rounded-4xl">
+    <div className="bg-[#2a2d2da1] fixed  top-30 z-208 text-white p-4 h-auto w-full  md:w-1/2 flex items-center md:left-80 justify-center flex-col gap-4 rounded-4xl">
       <button
         onClick={cancel}
         className="absolute top-3 right-3 p-2 rounded-lg text-red-500 hover:text-red-700 transition-colors"
