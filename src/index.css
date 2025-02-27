@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* body {
+body {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
   background-color: var(--bs-body-bg);
@@ -25,4 +25,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-} */
+}

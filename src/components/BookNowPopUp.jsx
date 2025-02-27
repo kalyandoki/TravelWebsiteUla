@@ -15,7 +15,7 @@ function BookNowPopUp({ cancel }) {
             Book Your Dream Holiday Today!
           </h1>
 
-          <form className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+          <form className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
             {[
               { label: "Name*", placeholder: "Enter your Name", type: "text" },
               {
