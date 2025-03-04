@@ -7,11 +7,13 @@ import ContactUs from "./Pages/ContactUs";
 import Header from "./components/Header";
 import Blogs from "./Pages/Blogs";
 import MessagePack from "./components/MessagePack";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <div className="h-screen">
+    <div className="h-full">
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/Leisure-Packages" element={<LeisurePackages />} />
